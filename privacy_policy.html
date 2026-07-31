@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Elektronik 198x</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1f2937;
+            border-bottom: 2px solid #b45309;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: #92400e;
+            margin-top: 30px;
+        }
+        .update-date {
+            text-align: center;
+            font-size: 0.9em;
+            color: #718096;
+            margin-bottom: 40px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #c53030;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #a0aec0;
+        }
+        a {
+            color: #92400e;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🕹️ Elektronik 198x Privacy Policy</h1>
+    <p class="update-date">Effective Date: July 31, 2026</p>
+
+    <h2>1. Overview</h2>
+    <p><strong>osivibecode</strong> operates the <strong>Elektronik 198x</strong> mobile application, a collection of 1980s-style LCD handheld games. This Privacy Policy explains how your data is handled. In short: we do not collect personally identifiable information (PII), and everything you play stays on your device — <strong>unless you choose to join the global leaderboard</strong>, which is described in section 4 and is entirely optional.</p>
+
+    <h2>2. Data Stored Locally</h2>
+    <p>The app stores your progress in an on-device database (SQLDelight) and your settings in local storage (Android DataStore / iOS local storage). This data is <strong>never</strong> transmitted to us unless section 4 applies:</p>
+    <ul>
+        <li><strong>Scores and Rounds:</strong> Your best score per game mode, and a record of finished rounds — score, active play time, and when it was played.</li>
+        <li><strong>App Preferences:</strong> Theme, language (7 supported), sound, display options for the LCD panel, and your alarm time if you set one.</li>
+        <li><strong>Anonymous Install Identifier:</strong> A randomly generated value created on first launch and stored locally. It contains nothing about you or your device, and <strong>it is not transmitted</strong>.</li>
+    </ul>
+
+    <h2>3. No Account Required</h2>
+    <p>The games are fully playable without an account, without a name, and without a network connection. Nothing about your play leaves your device by default.</p>
+
+    <h2>4. The Global Leaderboard (Optional)</h2>
+    <p>The app offers an optional global leaderboard. <strong>Nothing is sent and no account exists until you join it yourself.</strong> If you do join:</p>
+    <ul>
+        <li><strong>Anonymous account:</strong> An anonymous Firebase Authentication account is created at that moment. It has no email, no password, and no link to your identity — it is an identifier that lets the server recognise the same player again.</li>
+        <li><strong>Your chosen name:</strong> You pick a display name. It is <span class="highlight">public and permanent</span> — it appears next to your scores for everyone, and it cannot be changed afterwards. Do not use your real name or anything you would not want shown publicly.</li>
+        <li><strong>Your scores:</strong> The game, the difficulty (Game A / Game B), the score, and the active play time of that round.</li>
+        <li><strong>A region code:</strong> A two-letter country code taken from your device's <strong>language and region setting</strong>, so regional boards can be shown. The app requests <strong>no location permission</strong> and does not use GPS, Wi-Fi, or IP geolocation for this.</li>
+    </ul>
+    <p>This data is stored in a Google Firebase project operated by osivibecode (Firestore, Cloud Functions, Firebase Authentication). It is used solely to display leaderboards inside the app. It is never sold, and it is not used for advertising.</p>
+    <p>You can turn off score posting at any time in <strong>Settings &gt; Global board</strong>, and you can delete everything — your name, your scores, and the anonymous account — from the same screen. See section 10.</p>
+
+    <h2>5. Third-Party Services</h2>
+    <p>To keep the app free, Elektronik 198x uses the following services:</p>
+    <ul>
+        <li><strong>Google AdMob:</strong> Displays banner and (optional) rewarded advertisements. AdMob collects <strong>identifiers</strong> (such as your device's advertising ID) and <strong>usage data</strong> (ad interactions) to serve and measure ads. Your scores and leaderboard name are never shared with AdMob.</li>
+        <li><strong>Google Firebase (Analytics &amp; Crashlytics):</strong> Aggregate usage statistics and crash reports, used to find and fix bugs. Crash reports may include device model, OS version, and a stack trace.</li>
+        <li><strong>Google Firebase (Authentication, Firestore, Cloud Functions):</strong> Used only for the optional global leaderboard described in section 4, in a separate project from the one above.</li>
+        <li><strong>Cross-promotion service:</strong> The app occasionally shows a promotion for another of our apps. To fetch these it contacts our server with only the requesting app's identifier and the platform ("ios" or "android"). If you rate a promoted app inside the prompt, that rating is sent along with the promotion's identifier. <strong>No identifier for you or your device is sent.</strong></li>
+    </ul>
+
+    <h2>6. Advertising Consent (GDPR)</h2>
+    <p>On first launch the app presents Google's <strong>User Messaging Platform</strong> consent form where required (for example in the EEA and the UK). Your choice determines whether ads are personalized or non-personalized. You can change it later from the app's privacy options.</p>
+
+    <h2>7. App Tracking Transparency (iOS Only)</h2>
+    <p>On iOS, Elektronik 198x uses Apple's <span class="highlight">App Tracking Transparency (ATT)</span> framework.</p>
+    <ul>
+        <li><strong>Granting Permission:</strong> If you allow tracking, AdMob may access your device's Identifier for Advertisers (IDFA) to show more relevant ads.</li>
+        <li><strong>Declining Permission:</strong> The app works exactly the same; ads are generic.</li>
+        <li><strong>Control:</strong> Change this any time in <strong>iOS Settings &gt; Privacy &amp; Security &gt; Tracking</strong>.</li>
+    </ul>
+
+    <h2>8. Children's Privacy</h2>
+    <p>Elektronik 198x is a general-audience app <strong>intended for users aged 13 and over</strong>. It is not directed to children, and we do not knowingly collect personal information from children under 13. The advertising SDK is configured accordingly: child-directed treatment is disabled, under-age-of-consent is disabled, and ad content is capped at a "Teen" maturity rating. If you believe a child has provided personal information — including a leaderboard name — please contact us and we will remove it.</p>
+
+    <h2>9. Required Permissions</h2>
+    <ul>
+        <li><strong>Internet:</strong> Required to load advertisements, cross-promotion artwork, and the optional leaderboard. Not required to play, which works fully offline.</li>
+        <li><strong>Notifications:</strong> Requested only at the moment you set an alarm. Alarms are scheduled and delivered entirely on your device.</li>
+        <li><strong>Run at Startup (Android):</strong> Lets the app re-register a pending alarm after a reboot, so it still fires.</li>
+        <li><strong>Advertising ID (Android):</strong> Used by AdMob as described above.</li>
+        <li><strong>No location permission is requested on either platform.</strong></li>
+    </ul>
+
+    <h2>10. Data Retention &amp; Deletion</h2>
+    <p><strong>Local data:</strong> Because it is stored only on your device, we have no copy of it. Clear the app's storage in your device settings, or uninstall the app, and it is gone.</p>
+    <p><strong>Leaderboard data:</strong> If you joined the global board, open <strong>Settings &gt; Global board &gt; Delete my board data</strong>. This removes your scores, releases your name, and deletes the anonymous account. It cannot be undone, and a released name may be claimed by someone else afterwards. You can also write to the address in section 12 and we will do it for you.</p>
+    <p>Weekly and monthly leaderboard entries are deleted automatically once the period they belong to has passed. All-time entries are kept until you delete them.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. The updated version will be posted at this URL with a new effective date. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
+
+    <h2>12. Contact Information</h2>
+    <p>If you have any questions or concerns regarding your privacy while using Elektronik 198x, please contact us at:</p>
+    <p style="text-align: center;"><strong>Email:</strong> <a href="mailto:osi.vibe.code+elektronik198x@gmail.com">osi.vibe.code+elektronik198x@gmail.com</a></p>
+
+    <div class="footer">
+        <p>&copy; 2026 osivibecode. All rights reserved.</p>
+        <p><a href="eula.html">End User License Agreement (EULA)</a></p>
+    </div>
+</div>
+</body>
+</html>
